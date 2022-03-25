@@ -46,11 +46,11 @@ public class LoginResActivity extends AppCompatActivity {
                 String str2 = mk.getText().toString().trim();
                 if (!str1.isEmpty() || !str2.isEmpty()) {
                     if(str1.equals(taikhoan) && str2.equals(matkhau)){
-                        Intent intent2 = new Intent(LoginResActivity.this, next.class);
+                        Intent intent2 = new Intent(LoginResActivity.this, DetailItemPage.class);
                         startActivity(intent2);
                         Toast.makeText(LoginResActivity.this, "Welcome back, " + str1, Toast.LENGTH_SHORT).show();
                     }else if(str1.equals("sangthuanhung") && str2.equals("1")){
-                        Intent intent2 = new Intent(LoginResActivity.this, next.class);
+                        Intent intent2 = new Intent(LoginResActivity.this, DetailItemPage.class);
                         startActivity(intent2);
                         Toast.makeText(LoginResActivity.this, "Welcome back, " + str1, Toast.LENGTH_SHORT).show();
                     }else {
