@@ -48,7 +48,7 @@ public class LoginResActivity extends AppCompatActivity {
                     if(str1.equals(taikhoan) && str2.equals(matkhau)){
                         Intent intent2 = new Intent(LoginResActivity.this, DetailItemPage.class);
                         startActivity(intent2);
-                        Toast.makeText(LoginResActivity.this, "Welcome back, " + str1, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginResActivity.this, "chào thằn ngu, " + str1, Toast.LENGTH_SHORT).show();
                     }else if(str1.equals("sangthuanhung") && str2.equals("1")){
                         Intent intent2 = new Intent(LoginResActivity.this, DetailItemPage.class);
                         startActivity(intent2);
